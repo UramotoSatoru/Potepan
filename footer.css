@@ -1,0 +1,121 @@
+.site-footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #f79314;
+}
+
+.page-top-button.contents-tidy {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-top-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -105px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 12px 30px -15px;
+    transition: 0.2s;
+}
+
+.page-top-arrow {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-left: solid 3px #f79214;
+    border-top: solid 3px #f79214;
+    transform: rotate(
+45deg
+);
+    text-decoration: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.site-footer-main .footer-nav {
+    order: 2;
+}
+
+.footer-nav > li + li {
+    margin-top: 30px;
+}
+
+.footer-nav-item:link, .footer-nav-item:visited {
+    color: #fff;
+}
+.footer-nav-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.site-footer-main .footer-character {
+    order: 3;
+    align-self: flex-end;
+}
+.footer-character > img {
+    width: auto;
+    height: 70px;
+}
+
+.site-footer-main .footer-info {
+    order: 1;
+}
+.footer-info {
+    display: block;
+    color: #fff;
+}
+.address {
+    font-style: normal;
+}
+.footer-info .footer-logo {
+    display: inline-block;
+    max-width: 280px;
+}
+
+.footer-info .footer-logo > img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-info .footer-logo + .footer-company {
+    margin-top: 25px;
+}
+.footer-info .footer-company, .footer-info .footer-address {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-info .footer-company + .footer-address {
+    margin-top: 10px;
+}
+
+.footer-info .footer-social-item {
+    display: block;
+    max-width: 60px;
+}
+
+.footer-info .footer-social-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-info .footer-address + .footer-social {
+    margin-top: 35px;
+}
+.footer-info .footer-social {
+    display: flex;
+}
+
+.footer-info .footer-social > li + li {
+    margin-left: 20px;
+}
+
+.footer-copyright {
+    color: #fff;
+    font-size: 12px;
+}

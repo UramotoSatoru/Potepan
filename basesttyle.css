@@ -1,0 +1,276 @@
+
+/* ==================================================================================================================
+ Base style
+ ================================================================================================================== */
+/* font style*/
+html {
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+  color: #222;
+}
+input, select, textarea {
+  color: #222;
+}
+/* anchor style */
+a {
+  color: #222;
+  text-decoration: none;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+main {
+  display: block;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:focus {
+  outline: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+
+/* =============================================================
+main-section 
+ ============================================================= */
+.main-section {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+.section-header + .section-content {
+  margin-top: 60px;
+}
+
+.section-main-heading {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.section-sub-heading {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.section-header.bottom-line::after {
+  content: '';
+  display: block;
+  border-bottom: solid 6px #f79314;
+  width: 50px;
+  margin-top: 20px;
+}
+ 
+ .main-section.top-potepan {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #f6f6f6;
+}
+
+.main-section.top-potepan > * {
+    position: relative;
+    z-index: 1;
+}
+
+.top-potepan .content-width {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+    background-size: 281px 275px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 50px) top;
+    padding-top: 35px;
+}
+/* =====================================================================================================================
+ Modules
+ ===================================================================================================================== */
+.pc-dn {
+  display: none !important;
+}
+
+/* =============================================================
+hover
+============================================================= */
+
+/* style */
+.hover-opacity {
+transition: opacity 0.2s;
+}
+.hover-opacity:hover {
+opacity: 0.7;
+}
+.hover-scale {
+transition: transform 0.2s;
+}
+a:hover .hover-scale {
+transform: scale(1.1);
+}
+.service-media:hover .hover-scale {
+transform: scale(1.05);
+}
+.hover-text-color {
+transition: 0.2s;
+}
+a:hover .hover-text-color, .hover-text-color:hover {
+color: #f79314;
+}
+a.link-button {
+color: #fff;
+}
+
+/* =====================================================================================================================
+ Layouts
+ ===================================================================================================================== */
+.content-width {
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* =============================================================
+ contents-tidy
+ ============================================================= */
+.contents-tidy {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-list.contents-tidy {
+  align-items: center;
+}
+.section-header.contents-tidy {
+  flex-direction: column;
+  align-items: center;
+}
+.top-about .contents-tidy {
+  align-items: center;
+}
+.example-contents.contents-tidy {
+  flex-wrap: wrap;
+}
+.message-contents.contents-tidy {
+  align-items: center;
+}
+.course-title.contents-tidy {
+  justify-content: center;
+  align-items: center;
+}
+.course-title .contents-tidy {
+  flex-direction: column;
+  text-align: center;
+}
+.page-top-button.contents-tidy {
+  align-items: center;
+  justify-content: center;
+}
+.pick-up-contents-list.contents-tidy {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* =====================================
+link-button オレンジ色の白色のボタンとか
+===================================== */
+
+.link-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #f79314;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+}
+.link-button.menu {
+  height: 40px;
+  font-size: 12px;
+}
+
+.link-button.inversion {
+    color: #f79314;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.section-button {
+    margin-top: 60px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-button span:first-child {
+    letter-spacing: 4px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+.link-button span:last-child {
+    font-size: 14px;
+}
+
+/*<!-- 07.POTEPANが運用するサービス -->*/
+.service-list {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.service-list > li {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: calc(100% / 3);
+}
+
+.service-media-thumbnail {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 190px;
+    box-sizing: border-box;
+}
+
+.service-media-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+.service-media-thumbnail.red {
+    border-color: #fc6803;
+}
+
+.service-media-thumbnail.green {
+    border-color: #08af77;
+}
+
+.service-media-thumbnail.black {
+    border-color: #000;
+}
+
+.service-media-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+}
